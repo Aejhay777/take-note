@@ -1,0 +1,164 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header button {
+  padding: 3px;
+}
+
+.header button:hover {
+  background-color: black;
+  color: white;
+  font-style: oblique;
+}
+
+.header .toggle-text {
+  font-weight: 700;
+  margin: 0;
+  padding: 5px;
+  font-size: 15px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.dark-mode {
+  background-color: black;
+}
+
+.dark-mode h1 {
+  color: white;
+}
+
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  min-height: 100vh;
+}
+
+.notes-list {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1rem;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.note.new {
+  background-image: -webkit-gradient(linear, left top, right top, from(#82d24d), to(#b8d24d));
+  background-image: linear-gradient(to right, #82d24d, #b8d24d);
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-image: -webkit-gradient(linear, left top, right top, from(#82d24d), to(#b8d24d));
+  background-image: linear-gradient(to right, #82d24d, #b8d24d);
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #e1e1e1;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+}
+
+.save:hover {
+  font-style: oblique;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.note {
+  background-color: #8acefe;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+.note-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e9e9e9;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: none;
+  background-color: #e9e9e9;
+  width: 100%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.footer__copyright {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: darkcyan;
+}
+/*# sourceMappingURL=index.css.map */
